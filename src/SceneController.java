@@ -47,6 +47,11 @@ public class SceneController {
         draw.updateMouseXYStay();
         draw.update();
     }
+    @FXML
+    private void RGBRandom(ActionEvent actionEvent) {
+        RGBPalitre = 7;
+        updateRGB();
+    }
 
 
     private void changeScale(double s) {
@@ -95,10 +100,6 @@ public class SceneController {
 
     }
 
-    @FXML
-    private void RGBRandom(ActionEvent actionEvent) {
-        RGBPalitre = 7;
-        updateRGB();
-    }
+
 
 }
