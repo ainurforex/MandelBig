@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <Canvas fx:id="Canvas" height="600.0" onMouseClicked="#updateMouse" width="800.0" />
+      <TextField fx:id="Scale" editable="false" layoutX="810.0" layoutY="27.0" prefHeight="25.0" prefWidth="100.0" text="100" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="870.0" layoutY="79.0" mnemonicParsing="false" onAction="#decrease10" prefHeight="25.0" prefWidth="40.0" text="-10" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="79.0" />
+      <Button layoutX="870.0" layoutY="54.0" mnemonicParsing="false" onAction="#increase10" prefHeight="25.0" prefWidth="40.0" text="+10" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="54.0" />
+      <Button layoutX="810.0" layoutY="79.0" mnemonicParsing="false" onAction="#decrease50" prefHeight="25.0" prefWidth="60.0" text="-50" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="79.0" />
+      <Button layoutX="810.0" layoutY="54.0" mnemonicParsing="false" onAction="#increase100" prefHeight="25.0" prefWidth="60.0" text="+100" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="54.0" />
+      <Text layoutX="809.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scale %" textAlignment="CENTER" wrappingWidth="100.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="7.0" />
+      <Button layoutX="798.0" layoutY="141.0" mnemonicParsing="false" onAction="#RGBChange" prefHeight="25.0" prefWidth="100.0" text="RGBPattern" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="141.0" />
+      <Button layoutX="798.0" layoutY="174.0" mnemonicParsing="false" onAction="#RGBRandom" prefHeight="25.0" prefWidth="100.0" text="RGBRandom" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="174.0" />
+      <Text layoutX="801.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RGB" textAlignment="CENTER" wrappingWidth="95.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="112.0" />
+   </children>
+</AnchorPane>
